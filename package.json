@@ -1,0 +1,48 @@
+{
+  "name": "kiro-vue-hello-world",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Projeto Hello World em Vue 3 com melhores práticas de segurança e performance, documentado para uso com Kiro (steerings + MCPs).",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --build && vite build",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --build",
+    "lint": "eslint . --fix",
+    "lint:check": "eslint .",
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/",
+    "test:unit": "vitest",
+    "test:unit:run": "vitest run",
+    "analyze": "vite build --mode analyze"
+  },
+  "dependencies": {
+    "pinia": "2.3.1",
+    "vue": "3.5.44",
+    "vue-router": "4.5.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "20.1.6",
+    "@types/jsdom": "21.1.7",
+    "@types/node": "20.19.9",
+    "@vitejs/plugin-vue": "5.2.4",
+    "@vue/eslint-config-prettier": "10.2.0",
+    "@vue/eslint-config-typescript": "14.9.0",
+    "@vue/test-utils": "2.4.6",
+    "@vue/tsconfig": "0.7.0",
+    "eslint": "9.31.0",
+    "eslint-plugin-vue": "10.11.1",
+    "jsdom": "26.1.0",
+    "prettier": "3.6.2",
+    "rollup-plugin-visualizer": "5.14.0",
+    "typescript": "5.8.3",
+    "vite": "6.4.4",
+    "vite-plugin-vue-devtools": "7.7.7",
+    "vitest": "3.2.7",
+    "vue-tsc": "2.2.12"
+  }
+}
